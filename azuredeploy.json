@@ -155,7 +155,7 @@
                                     "inputs": {
                                         "body": {
                                             "incidentArmId": "@triggerBody()?['object']?['id']",
-                                            "message": "[concat('<p><strong>Made the Following GitHub Repositories Private for ', parameters('GitHubOrganizationName'), ':</strong><br>\n@{variables('Affected Repositories')}</p>')]"
+                                            "message": "[concat('<p><strong>Made the Following GitHub Repositories Private for ', parameters('GitHubOrganizationName'), ':</strong><br>\n@{variables(''Affected Repositories'')}</p>')]"
                                         },
                                         "host": {
                                             "connection": {
