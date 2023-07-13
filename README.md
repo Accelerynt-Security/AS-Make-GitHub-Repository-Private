@@ -13,6 +13,10 @@ This playbook is intended to be run from a Microsoft Sentinel Incident. It will 
 
 ![MakeGitHubRepoPrivate_Demo_2](Images/MakeGitHubRepoPrivate_Demo_2.png)
 
+![MakeGitHubRepoPrivate_Demo_3](Images/MakeGitHubRepoPrivate_Demo_3.png)
+
+![MakeGitHubRepoPrivate_Demo_4](Images/MakeGitHubRepoPrivate_Demo_4.png)
+
 > **Note**
 > Because there is currently no way to query GitHub repositories by name, this playbook loops through all GitHub repositories looking for a match. GitHub API responses are limited to a maximum of 100 items, so if your GitHub Organization has more than 100 repositories, you will need to add additional logic to this playbook to handle pagination.
 
