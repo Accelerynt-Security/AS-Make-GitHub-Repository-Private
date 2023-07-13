@@ -17,6 +17,10 @@ This playbook is intended to be run from a Microsoft Sentinel Incident. It will 
 
 ![MakeGitHubRepoPrivate_Demo_4](Images/MakeGitHubRepoPrivate_Demo_4.png)
 
+
+> **Note**
+> This playbook is predicated on the use of GitHub Audit Logs in Microsoft Sentinel. The Audit Log API is currently only available for the [GitHub Enterprise tier subscription](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/using-the-audit-log-api-for-your-enterprise).
+
 > **Note**
 > Because there is currently no way to query GitHub repositories by name, this playbook loops through all GitHub repositories looking for a match. GitHub API responses are limited to a maximum of 100 items, so if your GitHub Organization has more than 100 repositories, you will need to add additional logic to this playbook to handle pagination.
 
